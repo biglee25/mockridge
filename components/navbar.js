@@ -53,7 +53,7 @@ export default function Navbar() {
   return (
     <>
       <Container>
-        <h1>Logo</h1>
+        <h1>Logo Here</h1>
         <Menu>
           <ul>
             <li>One</li>
