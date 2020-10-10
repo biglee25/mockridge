@@ -14,11 +14,15 @@ body {
 h1 {
   font-family: Anton;
   text-transform: uppercase;
+  margin: 0;
+  text-align: left;
 }
 
 p,
 li {
   font-family: Roboto;
+
+  text-align: left;
 }
 
 a {

@@ -4,8 +4,7 @@ import styled from "styled-components";
 import { Twirl as Hamburger } from "hamburger-react";
 
 const Navbar = styled.div`
-postion: fixed
-  height: auto;
+  height: 100px;
   top: 0;
   left: 0;
   background: #333;
@@ -16,9 +15,14 @@ postion: fixed
   align-items: center;
   justify-content: space-between;
   z-index: 3;
+
+  @media (max-width: 768px) {
+    height: 50px;
+  }
 `;
 
 const Menu = styled.div`
+  overflow: hidden;
   position: absolute;
   visibility: hidden;
   top: 0;
@@ -34,7 +38,7 @@ const Menu = styled.div`
   visibility: ${({ nav }) => (nav ? "visible" : "hidden")};
   opacity: ${({ nav }) => (nav ? 1 : 0)};
 
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   z-index: 2;
 
   ul {
@@ -46,6 +50,14 @@ const Menu = styled.div`
       list-style: none;
       margin-top: 0.5rem;
     }
+  }
+`;
+
+const Logo = styled.div`
+  width: 50%;
+
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `;
 
@@ -62,7 +74,9 @@ export default function Nav() {
   return (
     <div>
       <Navbar>
-        <img src="images/logo.svg" width="20%" alt="logo"></img>
+        <Logo>
+          <img src="images/logo.svg" width="70%" alt="logo"></img>
+        </Logo>
 
         <a onClick={() => showNav(!nav)}>
           <Icon>
@@ -71,9 +85,10 @@ export default function Nav() {
         </a>
         <Menu nav={nav}>
           <ul>
-            <li>One</li>
-            <li>Two</li>
-            <li>Three</li>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Our Services</li>
+            <li>Contact us</li>
           </ul>
         </Menu>
       </Navbar>
