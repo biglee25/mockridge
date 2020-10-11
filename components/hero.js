@@ -52,7 +52,7 @@ export default function Hero() {
   return (
     <>
       <Container>
-        <FontAwesomeIcon icon={faCoffee} size="1x" color="red" />
+        <FontAwesomeIcon icon={faCoffee} size="2x" color="red" />
         <h1>CUSTOM NAMEPLATES PRODUCED TO SPECIFICATION</h1>
         <p>
           We have over fifty years of expertise in custom labels and nameplates,
