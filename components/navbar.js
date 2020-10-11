@@ -31,7 +31,7 @@ const Menu = styled.div`
   top: 0;
   right: 0;
   min-width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #333;
   color: white;
   display: flex;
