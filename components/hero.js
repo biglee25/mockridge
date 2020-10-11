@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+/* import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
-
+ */
 const Container = styled.section`
   text-align: center;
   background-image: url("images/hero.jpg");
@@ -41,7 +41,7 @@ const Container = styled.section`
     font-size: 3.7rem;
     line-height: 3.7rem;
     text-align: left;
-    color: rgba(248, 148, 6, 1);
+    color: #ccc;
     text-shadow: 2px 2px #000;
   }
 
@@ -56,7 +56,8 @@ export default function Hero() {
   return (
     <>
       <Container>
-        <FontAwesomeIcon icon={faCoffee} size="3x" color="red" />
+        {/*         <FontAwesomeIcon icon={faCoffee} size="3x" color="red" />
+         */}{" "}
         <h1>CUSTOM NAMEPLATES PRODUCED TO SPECIFICATION</h1>
         <p>
           We have over fifty years of expertise in custom labels and nameplates,

@@ -8,6 +8,7 @@ import Navbar from "../components/navbar";
 import Hero from "../components/hero";
 
 const Section = styled.section`
+  padding: 3rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,13 +16,24 @@ const Section = styled.section`
   width: 100%;
   margin: auto;
   text-align: center;
-  background: red;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `;
 
 const Container = styled.div`
-  padding: 0 2rem;
+  padding: 2rem;
   text-align: center;
-  background: yellow;
+
+  h1,
+  p {
+    text-align: left;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
 `;
 
 export default function Home() {
@@ -49,12 +61,12 @@ export default function Home() {
           </p>
         </Container>
         <Container>
-          <img src="images/hero.jpg" width="60%" alt="logo"></img>{" "}
+          <img src="images/hero.jpg" alt="logo"></img>
         </Container>
       </Section>
       <Section>
         <Container>
-          <img src="images/hero.jpg" width="60%" alt="logo"></img>{" "}
+          <img src="images/hero.jpg" alt="logo"></img>
         </Container>
         <Container>
           <h1>Title</h1>
