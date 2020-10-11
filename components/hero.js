@@ -14,8 +14,8 @@ const Container = styled.section`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
-  position: absolute;
+  height: 100vh;
+  position: relative;
   top: 0;
   left: 0;
   z-index: -1;
@@ -57,7 +57,7 @@ export default function Hero() {
     <>
       <Container>
         <FontAwesomeIcon icon={faCoffee} size="3x" color="red" />
-        <h1>CUSTOM NAMEPLATES PRODUCED TO SPECIFICATIONs</h1>
+        <h1>CUSTOM NAMEPLATES PRODUCED TO SPECIFICATION</h1>
         <p>
           We have over fifty years of expertise in custom labels and nameplates,
           with Mockridge Labels, your in safe hands.

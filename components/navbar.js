@@ -4,7 +4,8 @@ import styled from "styled-components";
 import { Twirl as Hamburger } from "hamburger-react";
 
 const Navbar = styled.div`
-  height: 100px;
+  position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
   background: #333;
@@ -15,6 +16,7 @@ const Navbar = styled.div`
   align-items: center;
   justify-content: space-between;
   z-index: 3;
+  box-shadow: 2px 2px 10px #000;
 
   @media (max-width: 768px) {
     height: 50px;
@@ -25,6 +27,7 @@ const Menu = styled.div`
   overflow: hidden;
   position: absolute;
   visibility: hidden;
+  opacity: 0;
   top: 0;
   right: 0;
   min-width: 100%;
