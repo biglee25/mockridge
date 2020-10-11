@@ -57,7 +57,7 @@ export default function Hero() {
     <>
       <Container>
         <FontAwesomeIcon icon={faCoffee} size="3x" color="red" />
-        <h1>CUSTOM NAMEPLATES PRODUCED TO SPECIFICATION</h1>
+        <h1>CUSTOM NAMEPLATES PRODUCED TO SPECIFICATIONs</h1>
         <p>
           We have over fifty years of expertise in custom labels and nameplates,
           with Mockridge Labels, your in safe hands.
