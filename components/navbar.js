@@ -55,6 +55,10 @@ const Menu = styled.div`
 
 const Logo = styled.div`
   width: 50%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 100;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -75,7 +79,7 @@ export default function Nav() {
     <div>
       <Navbar>
         <Logo>
-          <img src="images/logo.svg" width="70%" alt="logo"></img>
+          <img src="images/logo.svg" width="60%" alt="logo"></img>
         </Logo>
 
         <a onClick={() => showNav(!nav)}>
