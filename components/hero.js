@@ -33,6 +33,10 @@ const Container = styled.section`
     z-index: -1;
   }
 
+  .icon {
+    font-size: 1rem;
+  }
+
   h1 {
     font-size: 3.7rem;
     line-height: 3.7rem;
@@ -52,7 +56,7 @@ export default function Hero() {
   return (
     <>
       <Container>
-        <FontAwesomeIcon icon={faCoffee} size="2x" color="red" />
+        <FontAwesomeIcon icon={faCoffee} size="3x" color="red" />
         <h1>CUSTOM NAMEPLATES PRODUCED TO SPECIFICATION</h1>
         <p>
           We have over fifty years of expertise in custom labels and nameplates,
