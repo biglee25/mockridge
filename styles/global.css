@@ -4,7 +4,6 @@ body {
   margin: 0;
   line-height: 1.6;
   font-size: 18px;
-  overflow-x: hidden;
 }
 
 * {
@@ -36,5 +35,6 @@ a:hover {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }

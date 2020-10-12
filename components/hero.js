@@ -38,8 +38,8 @@ const Container = styled.section`
   }
 
   h1 {
-    font-size: 3.7rem;
-    line-height: 3.7rem;
+    font-size: 3rem;
+    line-height: 3rem;
     text-align: left;
     color: #ccc;
     text-shadow: 2px 2px #000;
@@ -56,8 +56,6 @@ export default function Hero() {
   return (
     <>
       <Container>
-        {/*         <FontAwesomeIcon icon={faCoffee} size="3x" color="red" />
-         */}{" "}
         <h1>CUSTOM NAMEPLATES PRODUCED TO SPECIFICATION</h1>
         <p>
           We have over fifty years of expertise in custom labels and nameplates,
