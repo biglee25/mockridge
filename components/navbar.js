@@ -11,7 +11,7 @@ const Navbar = styled.div`
   left: 0;
   background: #333;
   color: white;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   display: flex;
   align-items: center;
@@ -51,19 +51,6 @@ const Menu = styled.div`
   }
 `;
 
-const Logo = styled.div`
-  width: 30%;
-  height: auto;
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 100;
-
-  @media (max-width: 768px) {
-    width: 50%;
-  }
-`;
-
 const Icon = styled.div`
   position: relative;
   top: 50%;
@@ -77,9 +64,7 @@ export default function Nav() {
   return (
     <div>
       <Navbar>
-        <Logo>
-          <img src="images/logo.svg" alt="logo"></img>
-        </Logo>
+        <img src="images/logo.svg" alt="logo"></img>
 
         <a onClick={() => showNav(!nav)}>
           <Icon>

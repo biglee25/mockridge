@@ -10,18 +10,18 @@ body {
   box-sizing: border-box;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: Anton;
   text-transform: uppercase;
   margin: 0;
-  text-align: left;
 }
 
 p,
 li {
   font-family: Roboto;
   margin: 0;
-  text-align: left;
 }
 
 a {
@@ -34,7 +34,6 @@ a:hover {
 }
 
 img {
-  max-width: 100%;
+  max-width: 75%;
   height: auto;
-  display: block;
 }
