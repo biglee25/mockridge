@@ -7,7 +7,7 @@ const MainWrapper = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    margin: 1rem auto 2rem auto;
+    margin: 1rem 0 2rem 0;
     padding: 0 0.5rem;
     display: block;
   }

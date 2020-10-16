@@ -7,7 +7,7 @@ const MainWrapper = styled.div`
   color: #fff;
 
   @media (max-width: 768px) {
-    margin: 1rem auto 2rem auto;
+    margin: 1rem 0;
   }
 `;
 

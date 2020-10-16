@@ -12,7 +12,7 @@ import Navbar from "../components/navbar";
 import Hero from "../components/hero";
 
 const Container = styled.div`
-  padding: 0 2rem;
+  padding: 0;
 
   h1,
   h2,
@@ -20,6 +20,7 @@ const Container = styled.div`
     text-align: left;
 
     @media (max-width: 768px) {
+      padding: 0;
       text-align: center;
     }
   }
