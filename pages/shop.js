@@ -1,26 +1,21 @@
 import styled from "styled-components";
 import Navbar from "../components/navbar";
 
-const Padder = styled.div`
-    margin-top: 5rem;
-    position: absolute;
-    top: 300px;
-    left: 0;
 
-`
 
 function iframe() {
     return {
-        __html: '<iframe src="shop.html" style="position: absolute; top: 300px; width: 100%; height: 100%; border: none"></iframe>'
+        __html: '<embed align="center" src="shop.html" style="position: absolute; top: 100px;  margin: 0 auto; padding: 0; width: 100%; height: 100%; border: none; overflow-x: hidden; overflow-y: scroll;></embed>'
     }
 }
 
 
-export default function Exercises() {
+export default function Shop() {
     return (
-        <div>
-            <Navbar/>
-            <Padder/>
-            <div dangerouslySetInnerHTML={iframe()} />
-        </div>)
+        <>
+        <Navbar/>
+            <div dangerouslySetInnerHTML={iframe()}/>
+        </>
+
+        )
 }
