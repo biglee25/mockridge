@@ -1,10 +1,16 @@
 import styled from "styled-components";
 import Navbar from "../components/navbar";
 
+const frame = styled.div`
+iframe{
+	display:block;
+	margin:0 auto;
+}
+`
 
 function iframe() {
     return {
-        __html: '<embed align="center" src="shop.html" style="position: absolute; top: 100px;  margin: 0 auto; padding: 0; width: 100%; height: 100%; border: none; overflow-x: hidden; overflow-y: scroll;></embed>'
+        __html: '<embed align="center" src="shop.html" style="position: absolute; top: 100px; right: 0; bottom: 0; padding: 0; margin: 0 auto; min-width: 100%; height: 100%; border: none; overflow-x: hidden"></embed>'
     }
 }
 
@@ -13,7 +19,7 @@ export default function Shop() {
     return (
         <>
             <Navbar/>
-            <div dangerouslySetInnerHTML={iframe()}/>
+            <div dangerouslySetInnerHTML={iframe()} className="frame" />
         </>
 
         )
