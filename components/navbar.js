@@ -16,6 +16,7 @@ const Navbar = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 1000;
   box-shadow: 2px 2px 10px #000;
 `;
 
