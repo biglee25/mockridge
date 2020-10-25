@@ -13,7 +13,7 @@ export default function Shop() {
     return (
         <>
             <Navbar/>
-            <h1>Shop</h1>
+            <h1 style="color: black;">Shop</h1>
             <div dangerouslySetInnerHTML={iframe()} className="frame" />
         </>
 
